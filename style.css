@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 header {
@@ -9,25 +10,30 @@ header {
   background-size: cover;
   background-image: url('assets/iteration-1/home-banner.png');
   background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-.overlay-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .logo {
   margin: 50px auto 10px;
 }
 
+.header-h2 {
+  margin: 5px;
+}
+
+
 .firsat {
   font-family: Satisfy;
   color: #FDC913;
   font-size: 30px;
   margin-bottom: 0px;
+}
+.overlay-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header-h2 {
@@ -36,24 +42,112 @@ header {
   font-family: "Roboto Condensed";
   font-weight: 300;
   text-align: center;
+  margin-bottom: 0 auto;
 }
 
-button {
+header button {
   border-radius: 40px;
-  border: 1px solid transparent;
+  border: none;
   padding: 15px 60px;
   font-size: 20px;
   font-weight: 600;
   font-family: "Barlow";
   background-color: #FDC913;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  margin-top: 10px;
 }
 
+.secenekler nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  gap: 50px;
+  margin: 15px auto;
+}
+
+a {
+  gap: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Barlow";
+  font-weight: 420;
+  font-size: 20px;
+  color: black;
+}
+
+.main {
+  background-color: #FAF7F2;
+}
+
+.uclu-blok {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.left-block {
+  background-image: url('public/assets/iteration-2/cta/kart-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 30px 210px 100px 30px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  margin-right: 10px;
+}
+
+.left-header {
+  color: #FAF7F2;
+  font-size: 70px;
+  padding: 0 auto;
+  margin: 0 auto;
+  font-family: "Quattrocento";
+}
+
+.left-p {
+  color: #FAF7F2;
+  font-family: "Barlow";
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.siparis-ver {
+  background-color: #FAF7F2;
+  border: none;
+  border-radius: 50px;
+  color: #CE2829;
+  font-family: "Barlow";
+  font-weight: 600;
+  padding: 15px 30px;;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 150px 100px 0;
+}
+
+.right-block {
+  background-position: center;
+  border-radius: 20px;
+  color: #FAF7F2;
+  font-size: 20px;
+  font-family: "Barlow";
+}
+
+.right-first {
+  background-image: url('public/assets/iteration-2/cta/kart-2.png');
+  padding: 5px 300px 50px 30px;
+  margin-top: 70px; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right-second {
+  background-image: url('public/assets/iteration-2/cta/kart-3.png');
+  padding: 5px 100px 50px 30px;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
