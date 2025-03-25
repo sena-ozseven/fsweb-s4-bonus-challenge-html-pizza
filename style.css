@@ -181,29 +181,25 @@ a {
   font-weight: 600;
 }
 
-.second-nav {
-  border: 1px solid black;
+.second-menu {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   gap: 20px;
   padding-bottom: 40px;
-}
-.ramen {
-  gap: 10px;
-  background-color: white;
-  border-radius: 100px;
-  padding: 10px 20px;
-  font-family: Barlow;
-  font-weight: 500;
+  justify-content: center;
 }
 
-.pzza {
-  border: 1px solid black;
-  gap: 10px;
+.second-menu div {
   background-color: white;
   border-radius: 100px;
   padding: 10px 20px;
-  font-family: Barlow;
-  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pizzalar {
+  display: flex;
+  flex-direction: row;
+  padding: 100px;
+  justify-content: center;
 }
