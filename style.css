@@ -30,6 +30,7 @@ header {
   font-size: 30px;
   margin-bottom: 0px;
 }
+
 .overlay-header {
   display: flex;
   flex-direction: column;
@@ -200,6 +201,236 @@ a {
 .pizzalar {
   display: flex;
   flex-direction: row;
-  padding: 100px;
+  padding-bottom: 70px;
   justify-content: center;
+  gap: 10px;
+}
+
+.pizzalar div {
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  padding: 20px;
+  font-family: 'Barlow';
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews {
+  padding-left: 20%;
+  color: gray;
+}
+
+footer {
+  background-color: #292929;
+}
+
+.ana-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 120px;
+  padding: 50px;
+  color: white;
+  font-family: 'Barlow';
+  font-size: 18px;
+  border-bottom: 1px solid #5f5f5f;
+}
+
+#footer-logo {
+  height: 100px;
+}
+
+.iletisim img {
+  margin-top: 30px;
+}
+.footer-firstcolumn{
+  color: white;
+  font-family: 'Barlow';
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+#hot-menu-header {
+  padding: 80px 30px;
+}
+
+.instagram {
+  width: 400px;
+  padding: 80px;
+}
+#insta-header {
+  padding: 10px;
+}
+
+.insta-images {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.copyright-x {
+  color: white;
+  font-size: 15px;
+  font-family: 'Barlow';
+  font-weight: 200;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  body {
+    min-width: 300px;
+    text-align: center;
+   }
+
+   .overlay-header {
+    width: 100vw;
+    height: 100vh; 
+    background-image: url('assets/iteration-1/home-banner.png'); 
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header {
+    height: auto;
+    background-size: contain;
+  }
+
+  .logo {
+    margin: 30px auto 5px;
+  }
+
+  .header-h2 {
+    font-size: 50px;
+    width: 200px;
+    text-align: center;
+    height: 120px;
+    margin: 0;
+  }
+
+  .firsat {
+    display: none;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .overlay-header {
+    text-align: center;
+  }
+ 
+  .secenekler nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .secenekler div {
+    width: 30%;
+    text-align: center;
+  }
+
+  .uclu-blok {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .left-block, .right-block {
+    width: 100%;
+    text-align: center;
+  }
+
+  .left-header {
+    font-size: 20px;
+  }
+
+  .siparis-ver {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .pizzalar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pizzalar div {
+    width: 90%;
+  }
+
+  .ana-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .iletisim, .hot-menu, .instagram {
+    width: 100%;
+  }
+
+  .insta-images img {
+    width: 30%;
+  }
+
+  .uclu-blok {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-block, .right-first, .right-second {
+    padding: 20px;
+    width: 90%;
+    margin: 20px 0;
+  }
+  .left-header {
+    font-size: 50px;
+  }
+  .siparis-ver {
+    font-size: 12px;
+    padding: 10px 20px;
+    margin: 10px auto;
+  }
+  .second-menu, .pizzalar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ana-footer {
+    flex-direction: column;
+    text-align: center;
+    margin: 50px 20px;
+    padding: 30px;
+  }
+  .copyright-x {
+    flex-direction: column;
+    text-align: center;
+  }
 }
